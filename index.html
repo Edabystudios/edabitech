@@ -1,78 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+	<title>9jamix</title>
+	<meta name="google-adsense-account" content="ca-pub-8985882677432417">
+	<style>
+	body{
+		background-color: black;
+		font-family: 'lobster', cursive;
+		color:cyan;
+	}
+	header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 2px 2px;
+			background: cyan;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 99;
+			
+		}
+		.logo-container{
+			font-size: 1.0em;
+			color:cyan;
+			font-family: 'lobster';
+			user-select: none; 
+            text-align: left; /* Center the logo and text */
+            margin-top: 5px; /* Space above the logo */
         }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
+        .powered-by {
+            font-size: 12px; /* Smaller font size */
+            color: #777; /* Slightly lighter color */
+            margin-top: -20px;
+			
+			 /* Space between logo and text */
         }
-        nav {
-            margin: 10px 0;
+		.navigation a {
+			position: relative;
+			font-size: 1.1em;
+			color: cyan;
+			font-family: 'lobster', cursive;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 20px;
+		}
+		.navigation a::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -6px;
+			width: 100%;
+			height: 3px;
+			background: cyan;
+			border-radius: 5px;
+			transform-origin: right;
+			transform: scalex(0);
+			transition: transform .5s;
+		}
+		.navigation .btnLogin-popup{
+			width: 130px;
+			height:50px;
+			background: transparent;
+			border: 2px solid #3DB2D6;
+			outline: none;
+			border-radius: 6px;
+			cursor: pointer;
+			font-size: 1.1em;
+			color: #3DB2D6;
+			font-weight: 500;
+			margin-left: 40px;
+			transition: .5s;
+		}
+		.navigation .btnLogin-popup:hover {
+			background: cyan;
+			color: red;
+		}
+		.blog-post {
+           
+			font-family: sans-serif;
+			color: cyan;
         }
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
+
+        .google-ad {
+            width: 300px; /* Set your desired width */
+            height: 250px; /* Set your desired height */
+            border: 1px solid #ccc; /* Optional border */
+            background-color: #f9f9f9; /* Optional background color */
+            margin: 20px auto; /* Center the box */
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+		</style>
 </head>
 <body>
-
 <header>
-    <h1>Welcome to My Simple Website</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
 </header>
-
-<main>
-    <h2>About This Website</h2>
-    <p>This is a simple website template created using HTML and CSS. You can modify it to fit your needs.</p>
     
-    <h3>Services Offered</h3>
-    <ul>
-        <li>Web Design</li>
-        <li>Web Development</li>
-        <li>SEO Services</li>
-    </ul>
+   
+	<div class="logo-container">
+        <h1>9jaMix</h1> <!-- Website name -->
+        <div class="powered-by">Powered by Bexa &copy;</div>
+    </div><br>
+	<nav class="navigation">
+	<a href="#">Feeds</a>
+	<a href="#">Music</a>
+	<a href="#">Mixtapes</a>
+	<a href="#">Virals</a>
+	<a href="#">Sure Odds</a>
+</nav>
+<hr style="border: 2px solid cyan;"><center>
+<h2>Hey! Don't miss this opportunity</h2><p>
+<h5>Are you a content creator or do you have a passion for content creation? If so, we invite you to join our WhatsApp group to connect with other like-minded individuals who share similar goals and interests.
+</h5></p><a href="https://facebook.com"><button style="font-size:1em;background-color:cyan;font-family:'lobster';border-radius:50px;width:100px;height:40px;">Join Now</button></center></a>
+<h2 style="color:cyan; text-decoration:none;font-family:'sans-serif';">Trending Stories</h2>
 
-    <h3>Contact Us</h3>
-    <p>If you have any questions, feel free to <a href="mailto:example@example.com">email us</a>.</p>
-</main>
+    <div class="blog-post">
+        <h3>If your phone is included in this list of devices for 2024, then you are indeed using a highly capable machine.</h3>
+        <p>Discover if Your Phone is on the 2024 Elite List of High-Performance Devices – You May Be Holding a Powerhouse of Technology!.......</p>
+        <a href="#"><p style="text-decoration:none; color:cyan;">Click here to view</p></a>
+    </div>
 
-<footer>
-    <p>&copy; 2024 My Simple Website</p>
-</footer>
+    <div class="google-ad">
+        <!-- Replace this comment with your Google AdSense code -->
+    </div>
+
+    <div class="blog-post">
+        <h2>Blog Post Title 2</h2>
+        <p>Ut enim ad mingim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>... (more content) ...</p>
+    </div>
+
+    <div class="google-ad">
+        <!-- Replace this comment with your Google AdSense code -->
+    </div>
+
+    <div class="blog-post">
+        <h2>Blog Post Title 3</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>... (more content) ...</p>
+    </div>
+
+    <div class="google-ad">
+        <!-- Replace this comment with your Google AdSense code -->
+    </div>
 
 </body>
 </html>
