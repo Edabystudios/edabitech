@@ -1,174 +1,533 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>9jamix</title>
-    <meta name="description" content="Discover trending music, latest news, and engaging content all in one place. Stay updated with the top 5 music hits, entertainment insights, and more. Your go-to platform for fresh vibes and daily trends.">
-    <meta name="google-adsense-account" content="ca-pub-8985882677432417">
-    <style>
-        body {
-            background-color: black;
-            font-family: 'helvetica';
-            color: cyan;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 2px 2px;
-            background: cyan;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 99;
-        }
-        .logo-container {
-            font-size: 1.0em;
-            color: cyan;
-            font-family: 'lobster';
-            user-select: none; 
+	<title>9jamix</title>
+	
+	<meta name="description" content="Discover trending music, latest songs, and engaging content all in one place. Stay updated with the top 5 music hits, trending tiktok sounds, mara, amapiano and much more.">
+	<meta name="keywords" content="Trending tiktok songs, 9jamix, content creators whatsapp groups, Ringtones, Comedy Sound effects, mixtapes, dj mix, amapiano, tiktok trending sounds,  mara">
+	<meta name="google-adsense-account" content="ca-pub-8985882677432417">
+	<style>
+	body{
+		background-color: black;
+		font-family: 'helvetica';
+		color:cyan;
+	}
+	header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 2px 2px;
+			background: cyan;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 99;
+			
+		}
+		.logo-container{
+			font-size: 1.0em;
+			color:cyan;
+			font-family: 'lobster';
+			user-select: none; 
             text-align: left; /* Center the logo and text */
             margin-top: 5px; /* Space above the logo */
         }
         .powered-by {
             font-size: 12px; /* Smaller font size */
             color: #777; /* Slightly lighter color */
-            margin-top: -20px; /* Space between logo and text */
+            margin-top: -20px;
+			
+			 /* Space between logo and text */
         }
-        .navigation a {
-            position: relative;
-            font-size: 1.1em;
-            color: cyan;
-            font-family: 'lobster', cursive;
-            text-decoration: none;
-            font-weight: 500;
-            margin-left: 20px;
-        }
-        .navigation a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -6px;
-            width: 100%;
-            height: 3px;
-            background: cyan;
-            border-radius: 5px;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform .5s;
-        }
-        .navigation .btnLogin-popup {
-            width: 130px;
-            height: 50px;
-            background: transparent;
-            border: 2px solid #3DB2D6;
-            outline: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1.1em;
-            color: #3DB2D6;
-            font-weight: 500;
-            margin-left: 40px;
-            transition: .5s;
-        }
-        .navigation .btnLogin-popup:hover {
-            background: cyan;
-            color: red;
-        }
-        #trending-music {
-            border: 1px solid cyan;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .music-card {
-            background: black;
-            border: 1px solid cyan;
-            border-radius: 5px;
-            padding: 15px;
-            width: 300px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .music-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-        .music-card img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .music-title {
-            font-size: 1.2em;
-            margin: 10px 0;
-            color: cyan;
-        }
-        .music-artist {
-            font-size: 1em;
-            color: grey;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div id="logo-container"></div><br><br>
-    <div id="navigation"></div>
-</header>
-
-<main><center>
-    <h1 style="color:cyan;">Trending Music</h1>
-    <div id="trending-music">
-        <!-- Trending music cards will be injected here -->
-    </div></center>
-</main>
-
-<footer>
-    <div id="footer-section"></div>
-</footer>
-
-<script>
-// Load logo container
-fetch('logo-container.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('logo-container').innerHTML = data;
-    });
-
-// Load navigation
-fetch('navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('navigation').innerHTML = data;
-    });
-
-// Load footer section
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer-section').innerHTML = data;
-    });
-
-// Fetch and display trending music
-async function fetchTrendingMusic() {
-    const response = await fetch('https://rss.app/feeds/v1.1/eR36Vu5CPDxl7O9V.json');
-    const data = await response.json();
-    const musicContainer = document.getElementById('trending-music');
-    musicContainer.innerHTML = '';
-
-    // Display top 5 trending music
-    for (let i = 0; i < 5; i++) {
-        const item = data.items[i];
-        const card = document.createElement('div');
-        card.className = 'music-card';
-        card.innerHTML = `
-            <img src="${item.image}" alt="${item.title}">
-            <div class="music-title">${item.title}</div>
-            <div class="music-artist">${item.artist}</div>
-        `;
-        musicContainer.appendChild(card);
-    }
+		.navigation a {
+			position: relative;
+			font-size: 1.1em;
+			color: cyan;
+			font-family: 'lobster', cursive;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 20px;
+		}
+		.navigation a::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -6px;
+			width: 100%;
+			height: 3px;
+			background: cyan;
+			border-radius: 5px;
+			transform-origin: right;
+			transform: scalex(0);
+			transition: transform .5s;
+		}
+		.navigation .btnLogin-popup{
+			width: 130px;
+			height:50px;
+			background: transparent;
+			border: 2px solid #3DB2D6;
+			outline: none;
+			border-radius: 6px;
+			cursor: pointer;
+			font-size: 1.1em;
+			color: #3DB2D6;
+			font-weight: 500;
+			margin-left: 40px;
+			transition: .5s;
+		}
+		.navigation .btnLogin-popup:hover {
+			background: cyan;
+			color: red;
+		}
+		#trending-music {
+    border: 1px solid cyan;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-fetchTrendingMusic();
+.music-card {
+    background: black;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.music-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.music-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: cyan;
+}
+
+.music-artist {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.music-buttons {
+    margin-top: 10px;
+}
+
+.music-buttons button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-color: cyan;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.music-buttons button:hover {
+    background-color: #45a049;
+}
+ .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2em;
+			font-family: 'times new roman';
+            color: silver;
+            margin-bottom: 20px;
+        }
+        .artist-spotlight {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .artist-card {
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px cyan;
+            overflow: hidden;
+            width: 300px;
+            text-align: left;
+        }
+        .artist-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .artist-content {
+            padding: 15px;
+        }
+        .artist-name {
+            font-size: 1.5em;
+            color: silver;
+			font-family: 'lobster';
+            margin: 10px 0;
+        }
+        .artist-bio {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.6;
+        }
+       #cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3db;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cookieConsent p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#cookieConsent a {
+    color: brown;
+    text-decoration: underline dotted;
+}
+
+#cookieConsent button {
+    background-color: black;
+    color: #3db;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#cookieConsent button:hover {
+    background-color: gray;
+}
+
+
+		</style>
+</head>
+<body>
+<header>
+</header>
+    
+   
+	<div class="logo-container">
+        <h1>9jaMix</h1> <!-- Website name -->
+        <div class="powered-by">Powered by Bexa &copy;</div>
+    </div><br><hr style="border: 2px solid cyan;"><center>
+	<nav class="navigation">
+	<a href="https://9jamix.com.ng">[ Home ]</a>
+	<a href="https://9jamix.com.ng/music.html">[ Music ]</a>
+	<a href="https://9jamix.com.ng/mixtapes.html">[ DJ Mixes ]</a>
+	<a href="https://9jamix.com.ng/amapiano.html">[ Amapiano ]</a>
+	<a href="https://9jamix.com.ng/tiktok.html">[ Tiktok Hits ]</a>
+	<a href="https://9jamix.com.ng/ringtones.html">[ Ringtones ]</a>
+	<a href="https://9jamix.com.ng/sfx.html">[ Comedy sounds ]</a>
+	<a href="https://9jamix.com.ng/mara.html">[ Mara ]</a>
+</nav>
+<hr style="border: 2px solid cyan;"><center>
+<h2>Content Creators</h2><p>
+<h5>Are you a content creator or do you have a passion for content creation? If so, we invite you to join our WhatsApp group to connect with other like-minded individuals who share similar goals and interests.
+</h5></p><a href="https://chat.whatsapp.com/L9Xdle10cna4M4zIaABWD1"><button style="font-size:1em;background-color:cyan;font-family:'lobster';border-radius:50px;width:100px;height:40px;">Join Now</button></center></a>
+
+	<!-- Trending Music Section -->
+<section id="trending-music" style="padding: 40px; background-color: black; border-radius: 8px; margin: 20px;">
+    <h2 style="text-align: center; color: cyan;">Trending Tiktok Songs</h2>
+    <div id="music-container" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        <!-- Music Items will be populated here -->
+    </div>
+</section>
+
+	
+	<script>
+    // Function to fetch and display trending music
+    async function fetchTrendingMusic() {
+        // This is a placeholder for where you would fetch your data
+        const trendingMusic = [
+            {
+                title: "Juju (Mama sent a photo)",
+                artist: "Smur LEE ft Odvmodu black ft Shallipopi",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+            {
+                title: "Tshwala Bam",
+                artist: "Yupee ft Titom ft Burnaboy",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+            {
+                title: "Maharba",
+                artist: "Kizz Daniel",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+            {
+                title: "Change your Life",
+                artist: "Fireboy",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+            {
+                title: "Feel the Mood",
+                artist: "Famous Pluto, Outsyd Eddie & tega boi dc",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+			 {
+                title: "Ozeba",
+                artist: "Rema",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+            {
+                title: "Shu",
+                artist: "Diamond platinumz ft Chley",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+             {
+                title: "Hehehe",
+                artist: "Rema",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+             {
+                title: "Miracle no dey tire jesus",
+                artist: "chizie ft Moses Bliss ft Festizie",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+             {
+                title: "We want ToTo",
+                artist: "Small millitant",
+                image: "https://9jamix.com.ng/tiktok trending songs.png",
+                link: "#"
+            },
+            
+			 
+        ];
+
+        const musicContainer = document.getElementById('music-container');
+        musicContainer.innerHTML = ''; // Clear previous content
+
+        trendingMusic.forEach((track) => {
+            const musicCard = document.createElement('div');
+            musicCard.classList.add('music-card');
+
+            // Create the HTML structure for each music card
+            musicCard.innerHTML = `
+                <img src="${track.image}" alt="${track.title}">
+                <div class="music-title">${track.title}</div>
+                <div class="music-artist">${track.artist}</div>
+                <div class="music-buttons">
+                    <button onclick="window.location.href='${track.link}'">Listen &#x1F3A7;</button>
+                    <button onclick="window.location.href='${track.link}'">Download &#x2193;</button>
+                </div>
+            `;
+
+            musicContainer.appendChild(musicCard);
+        });
+    }
+
+    // Call fetchTrendingMusic when the page loads
+    document.addEventListener('DOMContentLoaded', fetchTrendingMusic);
 </script>
+
+	<div class="container">
+    <h2 class="section-title">Top 5 Nigerian musicians </h2>
+    <div class="artist-spotlight">
+        
+        
+        <div class="artist-card">
+            <img src="https://9jamix.com.ng/davido.jpg" alt="Davido">
+            <div class="artist-content">
+                <h3 class="artist-name">Davido &#x1F451;</h3>
+                <p class="artist-bio">
+                   Davido, whose real name is David Adedeji Adeleke, was born in Atlanta, Georgia on November 21, 1992 and raised in Lagos, Nigeria. He started his music career as a member of KB International before going solo. His debut single, "Dami Duro", was well-received in Nigeria. He has won over 30 awards internationally, including two Nigerian Teen Choice Awards
+                </p>
+                
+            </div>
+        </div>
+
+        
+        <div class="artist-card">
+            <img src="https://9jamix.com.ng/rema.jpg" alt="Rema">
+            <div class="artist-content">
+                <h3 class="artist-name">Rema &#x1F451;</h3>
+                <p class="artist-bio">
+                     Rema (Divine Ikubor) is a Nigerian singer and rapper born in Benin City on May 1st, 2000. Rema calls his sound ‘Afrorave’, a subgenre of Afrobeats with influences of Arabian and Indian music. He became known for the release of his song ‘Iron Man’, which appeared on Barack Obama’s 2019 summer playlist. He signed a record deal in 2019 with Jonzing World, a subsidiary of Mavin Records. In September 2020, Rema’s songs were included in the soundtrack of the soccer game FIFA 21. 
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="artist-card">
+            <img src="https://9jamix.com.ng/burnaboy.jpg" alt="Burna Boy">
+            <div class="artist-content">
+                <h3 class="artist-name">Burna Boy</h3>
+                <p class="artist-bio">
+                    Damini Ebunoluwa Ogulu MFR, born 2 July 1991, who is known professionally as Burna Boy, is a Nigerian singer, songwriter and record producer. He rose to stardom in 2012 after releasing "Like to Party", the lead single from his debut studio album L.I.F.E (2013). In 2017, Burna Boy signed with Atlantic Records in the United States (and its parent company Warner Music Group internationally) to release his third studio album, Outside (2018).
+                </p>
+            </div>
+        </div>
+
+        <div class="artist-card">
+            <img src="https://9jamix.com.ng/wizkid.jpg" alt="Wizkid">
+            <div class="artist-content">
+                <h3 class="artist-name">Wizkid &#x1F451;</h3>
+                <p class="artist-bio">
+                   Ayodeji Ibrahim Balogun, popularly known as Wizkid, is a Nigerian singer and songwriter born on July 16, 1990. Wizkid’s career dates to 2001, when he started making music at 11. Today he is an adept musician with countless awards in his arsenal. You might know him from his number one Billboard World Album Chart for “Made in Lagos,” which features his globally popular single, ‘Essence,’ or maybe from ‘Brown Skin Girl,’ with Queen Bey herself. However, Wizkid has proven that stars are designed to burn, and he burns brighter every time. 
+			
+
+
+
+                </p>
+              
+            </div>
+        </div>
+
+        <div class="artist-card">
+            <img src="https://9jamix.com.ng/asake.jpg" alt="Asake">
+            <div class="artist-content">
+                <h3 class="artist-name">Asake</h3>
+                <p class="artist-bio">
+                Ahmed Ololade (born 13 January 1995), known professionally as Asake, is a Nigerian Afrobeats singer and songwriter. He is signed to YBNL Nation and has an exclusive Distribution Deal with EMPIRE. His stage name "Asake" is his mother's name.
+
+Asake often uses up-tempo AfroFusion and Amapiano styled in production. Some listeners have also described his style as close to AfroFuji / Afrobeats due to his singing in Yoruba and the use of slang in his songs.
+                </p>
+               
+            </div>
+        </div>
+		
+<div class="artist-card">
+            <img src="https://9jamix.com.ng/kizzdaniel.jpg" alt="Kizz Daniel">
+            <div class="artist-content">
+                <h3 class="artist-name">Kizz Daniel</h3>
+                <p class="artist-bio">
+                    Oluwatobiloba Daniel Anidugbe (born 1 May 1994), who is better known as Kizz Daniel (formerly Kiss Daniel), is a Nigerian singer and songwriter. He rose to fame in 2014 with his debut single, "Woju".He signed a record deal with G-Worldwide Entertainment in 2013, but left the label following a publicized contract dispute and court case. He founded the Flyboy I.N.C record label in November 2017.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</center>
+            <div class="footer-section quick-links">
+   <h4 style="color:grey;font-family:'lobster';">Over 300,000 users have found these topics helpful, you may find them valuable as well</h4>
+<ul style="color: cyan;">
+                <li><a href="https://9jamix.com.ng/blog1.html" style="color:cyan; text-decoration:none;">99% Risk, high paying businesses to start with N300k </a></li>
+                <li><a href="https://9jamix.com.ng/blog2.html" style="color:cyan; text-decoration:none;">Low-risk, High Profit business idea to start with N50k</a></li>
+                <li><a href="https://9jamix.com.ng/blog3.html" style="color:cyan; text-decoration:none;">Street Hustle Ideas to earn 3k-5k daily, 100% assured</a></li>
+               <li><a href="https://9jamix.com.ng/blog4.html" style="color:cyan; text-decoration:none;">How to identify a stolen iOS/Android Phone</a></li>
+                <li><a href="https://9jamix.com.ng/blog5.html" style="color:cyan; text-decoration:none;">How to increase your loan limit by 80%</a></li>
+               <li><a href="https://9jamix.com.ng/blog6.html" style="color:cyan; text-decoration:none;">How to mind your business in 2024</a></li>
+               
+		    </ul>
+		
+		
+		
+		
+            <h4 style="color:GREY;">SPONSORED WHATSAPP GROUPS</h4>
+            <ul style="color:gray;">
+                <li><a href="https://chat.whatsapp.com/L9Xdle10cna4M4zIaABWD1" style="color:gray; text-decoration:none;">Content Creators Hub (219 Members)</a></li>
+                <li><a href="https://chat.whatsapp.com/Dhl9jpTrzf6FEUFgn0pDjw" style="color:gray; text-decoration:none;">F2F Grow page followers (732 members)</a></li>
+                <li><a href="https://chat.whatsapp.com/L9Xdle10cna4M4zIaABWD1" style="color:gray; text-decoration:none;">Bombing formats and Updates (2.6k members)</a></li>
+                <li><a href="https://chat.whatsapp.com/L9Xdle10cna4M4zIaABWD1" style="color:gray; text-decoration:none;">Learn Crypto-Trading (28k subscribers)</a></li>
+                <li><a href="https://chat.whatsapp.com/L9Xdle10cna4M4zIaABWD1" style="color:gray; text-decoration:none;">Businessmen and CEO (567 members)</a></li>
+				
+                <li><a href="https://chat.whatsapp.com/L9Xdle10cna4M4zIaABWD1" style="color:gray; text-decoration:none;">MOD Unlocked & Premium paid Android apps (175k subscribers)</a></li>
+                <li><a href="https://9jamix.com.ng/blank.html" style="color:gray; text-decoration:none;">GTA lovers (87 members)</a></li>
+				<h4 style="color:gray;font-family:'sans-serif';">To register your WhatsApp group on this list and gain more members, please click the "Add Group" button and provide the name of your group and invite link to join.</h4>
+           <center><a href="https://wa.me/2349134172430"><button style="width:250px;height:45px;border-radius:15px;font-size:1.5em;background-color:green;">Add Group</button></center></a>
+		    </ul>
+        </div>
+<hr style="border: 5px solid grey;"><center>
+        <!-- Contact Information -->
+        <div class="footer-section contact-info">
+            <h2 style="color:grey;font-family:'lobster';">Message Admin</h2>
+            <p><strong>Email:</strong> <a href="mailto:edabitech.ng@gmail.com" style="text-decoration:none;color:cyan;">edabz@9jamix.com.ng</a></p>
+            <p><strong>Facebook:</strong><a href="https://facebook.com"style="color:cyan;text-decoration:none;"> Bexa NG</a></p>
+			<p><strong>Telegram:</strong><a href="https://t.me/bexa2LLC"style="text-decoration:none;color:cyan;"> @bexa2LLC</a></p>
+            </div></center><center>
+			 <h2 style="color:grey;font-family:'lobster';">Connect with us on social media:</h2>
+            <p><strong>Twitter (X):</strong> <a href="#" style="text-decoration:none;color:cyan;"> Coming Soon</a></p>
+            <p><strong>Facebook:</strong><a href="#"style="color:cyan;text-decoration:none;"> Coming Soon</a></p>
+			<p><strong>Instagram:</strong><a href="#"style="text-decoration:none;color:cyan;"> Coming Soon</a></p>
+            </div></center>
+
+        
+        </div>
+    </div>
+<br>
+    <div class="footer-bottom">
+        <nav class="navigation">
+		
+	
+	<a href="https://wa.me/2349134172430">Advertise Here</a>
+	<a href="https://9jamix.com.ng/privacy.html">Privacy Policy</a>
+	<a href="https://9jamix.com.ng/terms.html">Terms & Conditions</a>
+	
+	
+</nav>
+    </div>
+	<div id="cookieConsent">
+    <p>We use cookies to improve your experience. By using our website, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <button id="acceptCookies">Accept</button>
+</div>
+<script>
+    // Check if cookies have been accepted
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookieConsent').style.display = 'flex';
+    }
+
+    // When the user clicks 'Accept'
+    document.getElementById('acceptCookies').addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookieConsent').style.display = 'none';
+    });
+</script>
+
+
+</footer>
 </body>
+
 </html>
