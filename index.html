@@ -3,6 +3,7 @@
 <head>
 	<title>9jamix</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://9jamix.com.ng/favicon.png" type="image/png">
 
 	<meta name="description" content="Discover trending music, latest songs, and engaging content all in one place. Stay updated with the top 5 music hits, trending tiktok sounds, mara, amapiano and much more.">
 	<meta name="keywords" content="Trending tiktok songs, 9jamix, content creators whatsapp groups, Ringtones, Comedy Sound effects, mixtapes, dj mix, amapiano, tiktok trending sounds,  mara">
@@ -104,7 +105,9 @@
 }
 
 .music-card img {
-    width: auto;
+    width: 100%; /* Ensures image fills the card's width without overflowing */
+    max-width: 100%; /* Prevents the image from exceeding the card's width */
+    height: auto; /* Maintains aspect ratio */
     border-radius: 5px;
 }
 
