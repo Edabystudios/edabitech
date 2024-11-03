@@ -230,6 +230,25 @@
 #cookieConsent button:hover {
     background-color: gray;
 }
+	.social-icons {
+  display: flex;
+  gap: 15px; /* Space between each icon */
+}
+
+/* Style each icon wrapper */
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #fff; /* Adjust for each platform if needed */
+  border-radius: 50%;
+}
+
+ion-icon {
+  font-size: 40px;
+  color: white;
+}
 
 
 		</style>
@@ -395,10 +414,26 @@
         <!-- Contact Information -->
         <div class="footer-section contact-info">
             <h3 style="color:grey;font-family:'lobster';">Message Admin</h3>
-            <p><strong>Email:</strong> <a href="mailto:edabitech.ng@gmail.com" style="text-decoration:none;color:cyan;">edabz@9jamix.com.ng</a></p>
-            <p><strong>Facebook:</strong><a href="https://facebook.com"style="color:cyan;text-decoration:none;"> Bexa NG</a></p>
-			<p><strong>Telegram:</strong><a href="https://t.me/bexa2LLC"style="text-decoration:none;color:cyan;"> @bexa2LLC</a></p>
-            </div></div>
+            <p><div class="social-icons">
+         <a href="https://www.facebook.com/MyAwesomePage" target="_blank" rel="noopener noreferrer">
+    <ion-icon name="paper-plane"></ion-icon>
+  </span>
+</a>
+ <a href="https://www.facebook.com/MyAwesomePage" target="_blank" rel="noopener noreferrer">
+    <ion-icon name="logo-twitter"></ion-icon>
+
+  </span>
+</a>
+ <a href="https://www.facebook.com/MyAwesomePage" target="_blank" rel="noopener noreferrer">
+    <ion-icon name="logo-youtube"></ion-icon>
+  </span>
+</a>
+ <a href="https://www.facebook.com/MyAwesomePage" target="_blank" rel="noopener noreferrer">
+    <ion-icon name="logo-tiktok"></ion-icon>
+  </span>
+</a>
+</div>
+        
 
         
         </div>
