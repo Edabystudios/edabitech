@@ -1,0 +1,11 @@
+# Block all crawlers from accessing sensitive files and folders
+User-agent: *
+Disallow: /blank.html       # Prevent indexing of blank.html
+Disallow: /admin/           # Prevent indexing of the admin folder if you have one
+Disallow: /private/         # Prevent indexing of private files
+
+# Allow crawlers access to public content
+Allow: /                     # Allow indexing of the entire site unless restricted
+
+# Specify the location of the sitemap
+Sitemap: https://9jamix.com.ng/sitemap.xml
