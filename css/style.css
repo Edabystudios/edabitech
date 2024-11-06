@@ -1,0 +1,275 @@
+  body{
+                      background-color: black;
+                      font-family: 'helvetica';
+                      color:cyan;
+	       }
+	   header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 2px 2px;
+			background: cyan;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 99;
+			
+		}
+		.logo-container{
+			font-size: 1.0em;
+			color:cyan;
+			font-family: 'HELVETICA';
+			user-select: none; 
+            text-align: left; /* Center the logo and text */
+            margin-top: 5px; /* Space above the logo */
+        }
+        .powered-by {
+            font-size: 12px; /* Smaller font size */
+            color: #777; /* Slightly lighter color */
+            margin-top: -20px;
+			
+			 /* Space between logo and text */
+        }
+		.navigation a {
+			position: relative;
+			font-size: 1.1em;
+			color:cyan;
+			font-family: 'helvetica';
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 20px;
+		}
+		
+		
+	.social-icons {
+  display: flex;
+  gap: 15px; /* Space between each icon */
+}
+
+/* Style each icon wrapper */
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: cyan; /* Adjust for each platform if needed */
+  border-radius: 50%;
+}
+
+ion-icon {
+  font-size: 20px;
+  color: cyan;
+}
+ .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .search-box {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid cyan;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border: 2px solid cyan;
+            border-left: none;
+            background-color: black;
+            color: cyan;
+            cursor: pointer;
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+			font-weight:bold;
+			font-family:'helvetica';
+        }
+        .search-button:hover {
+            background-color: #555;
+        }
+	
+    
+	 .centered-button {
+      display: block;
+      margin: 5px auto;
+      padding: 10px 20px;
+      background-color: cyan;
+      color: black;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 15px 0 15px 0; /* Top right and bottom left corners curved */
+      animation: blink 1s infinite; /* Blinking animation */
+    }
+
+    /* Centering container if needed */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+    }
+
+    /* Blinking animation */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+	/* Main container for the news section */
+/* Main container styling */
+.news-container {
+    width: 60%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+}
+
+/* Each news item styling */
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #222; /* Dark background for news items */
+    border-radius: 25px 0 25px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow */
+}
+
+/* Image styling for each news item */
+.news-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* Content styling within the news item */
+.news-content {
+    flex: 1;
+}
+.news-topic {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: cyan;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.news-summary {
+    color: #bbb;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.read-more {
+    font-size: 0.9em;
+    color: cyan; /* Cyan color for link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #00faff; /* Lighter cyan on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .news-container {
+        width: 90%;
+    }
+}
+
+/* Pagination buttons */
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#pagination button {
+    background-color: cyan;
+    border: none;
+    color: #222; /* Dark color for text on buttons */
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:disabled {
+    background-color: #444; /* Dark gray for disabled state */
+    color: #aaa; /* Lighter text color for disabled state */
+    cursor: not-allowed;
+}
+
+#pagination button:hover:not(:disabled) {
+    background-color: #00bfbf; /* Slightly different cyan on hover */
+}
+
+/* Page number text */
+#pagination .page-info {
+    align-self: center;
+    font-size: 14px;
+    color: #bbb; /* Light gray for page info text */
+}
+/* Footer styling */
+.footer-section {
+    background-color: #111; /* Dark background */
+    padding: 20px;
+    text-align: center;
+    color: grey;
+    font-family: 'Lobster', cursive;
+}
+
+.footer-section h3 {
+    color: #bbb; /* Light grey for the title */
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Social Icons container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: cyan; /* Cyan color for icons */
+    font-size: 1.5em; /* Icon size */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff; /* White color on hover */
+}
+
+.social-icons ion-icon {
+    vertical-align: middle;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .footer-section h3 {
+        font-size: 1.3em;
+    }
+
+    .social-icons a {
+        font-size: 1.3em;
+    }
+
+
