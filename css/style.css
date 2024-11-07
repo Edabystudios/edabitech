@@ -3,34 +3,31 @@
                       font-family: 'helvetica';
                       color:cyan;
 	       }
-	   header {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			padding: 2px 2px;
-			background: cyan;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			z-index: 99;
-			
-		}
-		.logo-container{
-			font-size: 1.0em;
-			color:cyan;
-			font-family: 'HELVETICA';
-			user-select: none; 
-            text-align: left; /* Center the logo and text */
-            margin-top: 5px; /* Space above the logo */
-        }
-        .powered-by {
-            font-size: 12px; /* Smaller font size */
-            color: #777; /* Slightly lighter color */
-            margin-top: -20px;
-			
-			 /* Space between logo and text */
-        }
+#masthead {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    min-width: 320px;
+    background-color: #fff;
+    z-index: 101;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+#masthead.isHidden {
+    -webkit-transform: translate3d(0, -50px, 0) !important;
+    transform: translate3d(0, -50px, 0) !important;
 		.navigation a {
 			position: relative;
 			font-size: 1.1em;
