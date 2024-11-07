@@ -3,42 +3,7 @@
                       font-family: 'helvetica';
                       color:cyan;
 	       }
-#masthead {
-    box-sizing: border-box;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    top: 0;
-    height: 50px;
-    min-width: 320px;
-    background-color: #fff;
-    z-index: 101;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-}
-#masthead.isHidden {
-    -webkit-transform: translate3d(0, -50px, 0) !important;
-    transform: translate3d(0, -50px, 0) !important;
-		.navigation a {
-			position: relative;
-			font-size: 1.1em;
-			color:cyan;
-			font-family: 'helvetica';
-			text-decoration: none;
-			font-weight: 500;
-			margin-left: 20px;
-		}
-		
-		
+
 	.social-icons {
   display: flex;
   gap: 15px; /* Space between each icon */
