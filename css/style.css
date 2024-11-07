@@ -271,5 +271,54 @@ ion-icon {
     .social-icons a {
         font-size: 1.3em;
     }
+/* Style the search container to control layout and spacing */
+.search-container {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border around the container */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style the search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between input and button */
+}
+
+/* Style the search input field */
+.search-field {
+    width: 70%; /* Adjust width as needed */
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc;
+}
+
+/* Style the search submit button */
+.search-submit {
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff; /* Button background color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the search submit button */
+.search-submit:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Optional: Clearfix to ensure container behaves properly */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
