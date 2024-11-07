@@ -2,9 +2,45 @@
                       background-color: black;
                       font-family: 'helvetica';
                       color:cyan;
-	       }
-
-	.social-icons {
+}
+header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 2px 2px;
+			background: vantablack;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 99;
+			
+		}
+		.logo-container{
+			font-size: 1.0em;
+			color:vantablack;
+			font-family: 'lobster';
+			user-select: none; 
+            text-align: left; /* Center the logo and text */
+            margin-top: 3px; /* Space above the logo */
+        }
+        .powered-by {
+            font-size: 12px; /* Smaller font size */
+            color: #777; /* Slightly lighter color */
+            margin-top: -20px;
+			
+			 /* Space between logo and text */
+        }
+		.navigation a {
+			position: relative;
+			font-size: 1.2em;
+			color: black;
+	
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 13px;
+		}
+.social-icons {
   display: flex;
   gap: 15px; /* Space between each icon */
 }
@@ -252,76 +288,3 @@ ion-icon {
     display: table;
     clear: both;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: black;
-  color: cyan;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-links a {
-  color: cyan;
-  text-decoration: none;
-  padding: 0.5rem;
-  transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-  background-color: gray;
-  border-radius: 4px;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: gray;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 1rem;
-    background-color: #00FFFF;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 200px;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 1rem;
-    display: block;
-    text-align: center;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
