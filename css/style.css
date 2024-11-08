@@ -339,3 +339,42 @@ ion-icon {
     100% {
         background-position: 100% 0%;
     }
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.music-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.music-item:hover {
+    transform: scale(1.05);
+}
+
+.song-subtitle {
+    font-size: 1.1em;
+    color: cyan;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.song-title {
+    font-size: 1.2em;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+.download-link {
+    color: cyan;
+    text-decoration: dotted underline;
+    font-weight: bold;
+    font-size: 0.9em;
+}
