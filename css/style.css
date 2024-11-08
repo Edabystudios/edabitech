@@ -317,4 +317,25 @@ ion-icon {
             color: #666;
             line-height: 1.6;
         }
+.soft-cyan-glitter {
+    height: 4px; /* Thickness of the line */
+    border: none;
+    background: linear-gradient(
+        90deg,
+        #0d4f5e, /* Dark cyan */
+        #14667a, /* Medium-dark cyan */
+        #00a8a8, /* Soft cyan */
+        #14667a, /* Medium-dark cyan */
+        #0d4f5e  /* Dark cyan */
+    );
+    background-size: 200% 100%;
+    animation: soft-cyan-glitter 3s linear infinite;
+}
 
+@keyframes soft-cyan-glitter {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
