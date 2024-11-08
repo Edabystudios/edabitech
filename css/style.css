@@ -135,8 +135,8 @@ ion-icon {
     margin-bottom: 20px;
     padding: 15px;
     background-color: #181d23; /* Dark background for news items */
-    border-radius: 25px 0 25px 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow */
+    border-radius: 35px 0 35px 0;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow */
 }
 
 /* Image styling for each news item */
