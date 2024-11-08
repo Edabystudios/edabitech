@@ -1,396 +1,313 @@
 
-  body{
-                      background-color: #181d23;
-                      font-family: 'verdana';
-                      color:#fff;
-	       }
-	   header {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			padding: 2px 2px;
-			background: #181d23;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			z-index: 99;
-			
-		}
-		.logo-container{
-			font-size: 1.0em;
-			color:#fff;
-			font-family: 'verdana';
-			user-select: none; 
-            text-align: left; /* Center the logo and text */
-            margin-top: 5px; /* Space above the logo */
-        }
-        .powered-by {
-            font-size: 12px; /* Smaller font size */
-            color: #f5f5f5; /* Slightly lighter color */
-            margin-top: -20px;
-			
-			 /* Space between logo and text */
-        }
-		.navigation a {
-			position: relative;
-			font-size: 1.1em;
-			color:#FFF;
-			font-family: 'verdana';
-			text-decoration: none;
-			font-weight: 500;
-			margin-left: 20px;
-		}
-		
-		
-	.social-icons {
-  display: flex;
-  gap: 15px; /* Space between each icon */
-}
+  /* Body styling */
+  body {
+    background-color: #181d23;
+    font-family: Verdana, sans-serif;
+    color: #fff;
+  }
 
-/* Style each icon wrapper */
-.icon-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  background-color: #FFF; /* Adjust for each platform if needed */
-  border-radius: 50%;
-}
+  /* Header styling */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    background: #181d23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
 
-ion-icon {
-  font-size: 20px;
-  color: #FFF ;
-}
- .search-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 50px;
-        }
-        .search-box {
-            padding: 10px;
-            width: 300px;
-            border: 2px solid black;
-            border-radius: 8px 0 0 8px;
-            font-size: 16px;
-        }
-        .search-button {
-            padding: 10px 20px;
-            border: 2px solid black;
-            border-left: none;
-            background-color: black;
-            color: #FFF;
-            cursor: pointer;
-            border-radius: 0 8px 8px 0;
-            font-size: 16px;
-			font-weight:bold;
-			font-family:'';
-        }
-        .search-button:hover {
-            background-color: #555;
-        }
-	
-    
-	 .centered-button {
-      display: block;
-      margin: 5px auto;
-      padding: 10px 20px;
-      background-color: cyan;
-      color: black;
-      font-size: 1.2em;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      border-radius: 15px 0 15px 0; /* Top right and bottom left corners curved */
-      animation: blink 1s infinite; /* Blinking animation */
-    }
+  /* Logo container styling */
+  .logo-container {
+    font-size: 1em;
+    color: #fff;
+    user-select: none;
+    text-align: left;
+    margin-top: 5px;
+  }
 
-    /* Centering container if needed */
-    .button-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 10vh;
-    }
+  /* Powered by section */
+  .powered-by {
+    font-size: 12px;
+    color: #f5f5f5;
+    margin-top: -20px;
+  }
 
-    /* Blinking animation */
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-	/* Main container for the news section */
-/* Main container styling */
-.news-container {
+  /* Navigation links */
+  .navigation a {
+    font-size: 1.1em;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+
+  /* Social icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* Icon wrapper styling */
+  .icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #FFF;
+    border-radius: 50%;
+  }
+
+  /* Icon styling */
+  ion-icon {
+    font-size: 20px;
+    color: #FFF;
+  }
+
+  /* Search box styling */
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .search-box {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-left: none;
+    background-color: black;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+  }
+
+  .search-button:hover {
+    background-color: #555;
+  }
+
+  /* Centered button styling */
+  .centered-button {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 20px;
+    background-color: cyan;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px 0 15px 0;
+    animation: blink 1s infinite;
+  }
+
+  /* Blinking animation */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* News container styling */
+  .news-container {
     width: 60%;
     margin: 20px auto;
-    font-family: 'verdana';
+    font-family: Verdana, sans-serif;
     max-width: 100%;
-}
+  }
 
-/* Each news item styling */
-.news-item {
+  /* News item styling */
+  .news-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #181d23; /* Dark background for news items */
+    background-color: #181d23;
     border-radius: 35px 0 35px 0;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow */
-}
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  }
 
-/* Image styling for each news item */
-.news-image img {
+  .news-image img {
     width: 60px;
     height: 60px;
     border-radius: 5px;
     margin-right: 15px;
-}
+  }
 
-/* Content styling within the news item */
-.news-content {
+  .news-content {
     flex: 1;
-}
-.news-topic {
+  }
+
+  .news-topic {
     font-weight: bold;
     font-size: 1.2em;
-    margin-bottom: 5px;
     color: #FFF;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal; /* Allow text to wrap */
-    word-wrap: break-word; /* Break long words to prevent overflow */
-}
+    word-wrap: break-word;
+  }
 
-.news-summary {
+  .news-summary {
     color: #bbb;
-    margin-bottom: 10px;
     font-size: 0.9em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal; /* Allow text to wrap */
-    word-wrap: break-word; /* Break long words to prevent overflow */
-}
+    word-wrap: break-word;
+  }
 
-.read-more {
+  .read-more {
     font-size: 0.9em;
-    color: cyan; /* Cyan color for link */
+    color: cyan;
     text-decoration: none;
     transition: color 0.3s ease;
-}
+  }
 
-.read-more:hover {
+  .read-more:hover {
     text-decoration: underline;
-    color: #FFF; /* Lighter cyan on hover */
-}
+    color: #FFF;
+  }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .news-container {
-        width: 90%;
-    }
-}
-
-/* Pagination buttons */
-#pagination {
+  /* Pagination buttons */
+  #pagination {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-}
+  }
 
-#pagination button {
+  #pagination button {
     background-color: cyan;
     border: none;
-    color: #222; /* Dark color for text on buttons */
+    color: #222;
     font-size: 14px;
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
 
-#pagination button:disabled {
-    background-color: #444; /* Dark gray for disabled state */
-    color: #aaa; /* Lighter text color for disabled state */
+  #pagination button:disabled {
+    background-color: #444;
+    color: #aaa;
     cursor: not-allowed;
-}
+  }
 
-#pagination button:hover:not(:disabled) {
-    background-color: #00bfbf; /* Slightly different cyan on hover */
-}
+  #pagination button:hover:not(:disabled) {
+    background-color: #00bfbf;
+  }
 
-/* Page number text */
-#pagination .page-info {
-    align-self: center;
-    font-size: 14px;
-    color: #bbb; /* Light gray for page info text */
-}
-/* Footer styling */
-.footer-section {
-    background-color: #181d23; /* Dark background */
+  /* Footer styling */
+  .footer-section {
+    background-color: #181d23;
     padding: 20px;
-    border-radius:20px 0 20px 0;
+    border-radius: 20px 0 20px 0;
     text-align: center;
     color: grey;
-    font-family: 'verdana', cursive;
-}
+    font-family: Verdana, sans-serif;
+  }
 
-.footer-section h3 {
-    color: #bbb; /* Light grey for the title */
-    margin-bottom: 10px;
+  .footer-section h3 {
+    color: #bbb;
     font-size: 1.5em;
-}
+    margin-bottom: 10px;
+  }
 
-/* Social Icons container */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-icons a {
-    color: cyan; /* Cyan color for icons */
-    font-size: 1.5em; /* Icon size */
+  .social-icons a {
+    color: cyan;
+    font-size: 1.5em;
     transition: color 0.3s ease;
-}
+  }
 
-.social-icons a:hover {
-    color: #fff; /* White color on hover */
-}
+  .social-icons a:hover {
+    color: #fff;
+  }
 
-.social-icons ion-icon {
-    vertical-align: middle;
-}
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .news-container {
+      width: 90%;
+    }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
     .footer-section h3 {
-        font-size: 1.3em;
+      font-size: 1.3em;
     }
 
     .social-icons a {
-        font-size: 1.3em;
+      font-size: 1.3em;
     }
- .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .section-title {
-            font-size: 2em;
-			font-family: 'times new roman';
-            color: silver;
-            margin-bottom: 20px;
-        }
-        .artist-spotlight {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .artist-card {
-            background-color: black;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px cyan;
-            overflow: hidden;
-            width: 300px;
-            text-align: left;
-        }
-        .artist-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .artist-content {
-            padding: 15px;
-        }
-        .artist-name {
-            font-size: 1.5em;
-            color: silver;
-	    font-family: 'verdana';
-            margin: 10px 0;
-        }
-        .artist-bio {
-            font-size: 0.9em;
-            color: #666;
-            line-height: 1.6;
-        }
-    .soft-cyan-glitter {
-        height: 4px; /* Thickness of the line */
-        width: 100%; /* Full width */
-        max-width: 600px; /* Optional: Cap width for large screens */
-       
-        border: none;
-        background: linear-gradient(
-            90deg,
-            #0d4f5e, /* Dark cyan */
-            #14667a, /* Medium-dark cyan */
-            #00a8a8, /* Soft cyan */
-            #00d4d4, /* Bright cyan for sparkle */
-            #00a8a8, /* Soft cyan */
-            #14667a, /* Medium-dark cyan */
-            #0d4f5e  /* Dark cyan */
-        );
-        background-size: 300% 100%;
-        animation: soft-cyan-glitter 1.5s ease-in-out infinite;
+  }
 
-        /* Ensuring cross-browser compatibility */
-        -webkit-background-clip: text;
-        -webkit-animation: soft-cyan-glitter 1.5s ease-in-out infinite;
-        -webkit-text-fill-color: transparent; /* Fallback for older browsers */
-    }
-
-    /* Glitter animation */
-    @keyframes soft-cyan-glitter {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-    /* Vendor prefix for WebKit browsers */
-    @-webkit-keyframes soft-cyan-glitter {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-.music-grid {
-    display: grid;
-  
-    gap: 20px;
-    padding: 20px;
-}
-
-.music-item {
-    background-color: #1e1e1e;
-    border-radius: 8px;
+  /* Music section styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
+  }
 
-.music-item:hover {
-    transform: scale(1.05);
-}
+  .section-title {
+    font-size: 2em;
+    font-family: 'Times New Roman', serif;
+    color: silver;
+    margin-bottom: 20px;
+  }
 
-.song-subtitle {
-    font-size: 1.1em;
-    color: cyan;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
+  .artist-spotlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
 
-.song-title {
-    font-size: 1.2em;
-    margin: 8px 0;
-    color: #ffffff;
-}
+  .artist-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px cyan;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+  }
 
-.download-link {
-    color: #fff;
-    text-decoration: dotted underline;
-    font-weight: bold;
+  .artist-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .artist-name {
+    font-size: 1.5em;
+    color: silver;
+    margin: 10px 0;
+  }
+
+  .artist-bio {
     font-size: 0.9em;
-}
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* Glitter effect */
+  .soft-cyan-glitter {
+    height: 4px;
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(90deg, #0d4f5e, #14667a, #00a8a8, #00d4d4, #00a8a8, #14667a, #0d4f5e);
+    background-size: 300% 100%;
+    animation: soft-cyan-glitter 1.5s ease-in-out infinite;
+  }
+
+  @keyframes soft-cyan-glitter {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
