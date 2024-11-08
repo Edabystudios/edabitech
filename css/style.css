@@ -319,7 +319,7 @@ ion-icon {
             line-height: 1.6;
         }
     .soft-cyan-glitter {
-        height: 4px; /* Thickness of the line */
+        height: 2px; /* Thickness of the line */
         width: 100%; /* Full width */
         max-width: 600px; /* Optional: Cap width for large screens */
         margin: 0 auto; /* Center the line */
@@ -335,7 +335,7 @@ ion-icon {
             #0d4f5e  /* Dark cyan */
         );
         background-size: 300% 100%;
-        animation: soft-cyan-glitter 2.5s ease-in-out infinite;
+        animation: soft-cyan-glitter 1.5s ease-in-out infinite;
 
         /* Ensuring cross-browser compatibility */
         -webkit-background-clip: text;
