@@ -5,9 +5,9 @@ let newsData = [
         imageUrl: "https://9jaflaver.com/wp-content/uploads/2024/11/FB_IMG_1730899054700_1730899326-70x70.jpg.webp"
     },
     {
-        title: "FIFA President Gianni Infantino Congratulates Donald Trump Following Self-Declared Election Victory",
-        summary: "FIFA President Gianni Infantino extended his congratulations to Donald Trump after Trump declared victory in the U.S. election. The message came amid ongoing vote counting and uncertain results, sparking reactions across the political and sports communities.",
-        imageUrl: "https://9jaflaver.com/wp-content/uploads/2024/11/9…ngratulated_Donald_Trump_w-a-2_1730893482967.avif"
+        title: "Elon Musk’s wealth increases by $13bn after Trump’s win",
+        summary: "Elon Musk, CEO of Tesla and owner of X (formerly Twitter), saw his net worth climb by approximately $13 billion as Tesla shares rose 13% following Donald Trump's self-declared U.S. presidential election victory. Investors speculated that Trump’s win might create favorable conditions for Tesla, fueling a surge in stock prices. Musk, a prominent Trump supporter, has reportedly contributed nearly $119 million to Trump’s campaign through a political action committee. Despite Trump's skepticism toward electric vehicles (EVs) and pledges to repeal EV incentives, analysts believe Tesla may withstand policy changes and maintain its competitive edge in a shifting market.",
+        imageUrl: "https://9jaflaver.com/wp-content/uploads/2024/11/T…AIGN-PA-74_1729081328284_1730869055179-70x70.webp"
     },
 	  {
         title: "Headline of the First News Article",
