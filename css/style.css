@@ -1,8 +1,8 @@
 
   body{
-                      background-color: white;
+                      background-color: #181d23;
                       font-family: 'verdana';
-                      color:black;
+                      color:#fff;
 	       }
 	   header {
 			position: fixed;
@@ -10,7 +10,7 @@
 			left: 0;
 			width: 100%;
 			padding: 2px 2px;
-			background: cyan;
+			background: #181d23;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -19,15 +19,15 @@
 		}
 		.logo-container{
 			font-size: 1.0em;
-			color:black;
-			font-family: 'HELVETICA';
+			color:#fff;
+			font-family: 'verdana';
 			user-select: none; 
             text-align: left; /* Center the logo and text */
             margin-top: 5px; /* Space above the logo */
         }
         .powered-by {
             font-size: 12px; /* Smaller font size */
-            color: #777; /* Slightly lighter color */
+            color: #f5f5f5; /* Slightly lighter color */
             margin-top: -20px;
 			
 			 /* Space between logo and text */
@@ -35,7 +35,7 @@
 		.navigation a {
 			position: relative;
 			font-size: 1.1em;
-			color:black;
+			color:#FFF;
 			font-family: 'verdana';
 			text-decoration: none;
 			font-weight: 500;
@@ -54,13 +54,13 @@
   align-items: center;
   justify-content: center;
   padding: 8px;
-  background-color: black; /* Adjust for each platform if needed */
+  background-color: #FFF; /* Adjust for each platform if needed */
   border-radius: 50%;
 }
 
 ion-icon {
   font-size: 20px;
-  color: black;
+  color: #FFF ;
 }
  .search-container {
             display: flex;
@@ -80,12 +80,12 @@ ion-icon {
             border: 2px solid black;
             border-left: none;
             background-color: black;
-            color: cyan;
+            color: #FFF;
             cursor: pointer;
             border-radius: 0 8px 8px 0;
             font-size: 16px;
 			font-weight:bold;
-			font-family:'helvetica';
+			font-family:'';
         }
         .search-button:hover {
             background-color: #555;
@@ -124,7 +124,7 @@ ion-icon {
 .news-container {
     width: 60%;
     margin: 20px auto;
-    font-family: Arial, sans-serif;
+    font-family: 'verdana';
     max-width: 100%;
 }
 
@@ -134,7 +134,7 @@ ion-icon {
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #222; /* Dark background for news items */
+    background-color: #181d23; /* Dark background for news items */
     border-radius: 25px 0 25px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow */
 }
@@ -155,7 +155,7 @@ ion-icon {
     font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 5px;
-    color: cyan;
+    color: #FFF;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal; /* Allow text to wrap */
@@ -181,7 +181,7 @@ ion-icon {
 
 .read-more:hover {
     text-decoration: underline;
-    color: #00faff; /* Lighter cyan on hover */
+    color: #FFF; /* Lighter cyan on hover */
 }
 
 /* Responsive adjustments */
