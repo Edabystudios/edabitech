@@ -1,8 +1,8 @@
 let newsData = [
     {
-        title: "Headline of the First News Article",
-        summary: "A short summary for the first news article.",
-        imageUrl: "https://example.com/path-to-image1.jpg"
+        title: "20 passengers die as tipper rams into 18-seater bus in Imo (photos)",
+        summary: "Tears, screams, and sorrow engulfed the scene as 20 passengers tragically lost their lives when a tipper truck collided with an 18-seater bus in Imo. (Photos)",
+        imageUrl: "https://9jaflaver.com/wp-content/uploads/2024/11/FB_IMG_1730899054700_1730899326-70x70.jpg.webp"
     },
     {
         title: "Second News Headline",
