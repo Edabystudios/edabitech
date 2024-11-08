@@ -319,10 +319,10 @@ ion-icon {
             line-height: 1.6;
         }
     .soft-cyan-glitter {
-        height: 2px; /* Thickness of the line */
+        height: 4px; /* Thickness of the line */
         width: 100%; /* Full width */
         max-width: 600px; /* Optional: Cap width for large screens */
-        margin: 0 auto; /* Center the line */
+       
         border: none;
         background: linear-gradient(
             90deg,
@@ -339,7 +339,7 @@ ion-icon {
 
         /* Ensuring cross-browser compatibility */
         -webkit-background-clip: text;
-        -webkit-animation: soft-cyan-glitter 2.5s ease-in-out infinite;
+        -webkit-animation: soft-cyan-glitter 1.5s ease-in-out infinite;
         -webkit-text-fill-color: transparent; /* Fallback for older browsers */
     }
 
