@@ -300,7 +300,6 @@
   .soft-cyan-glitter {
     height: 4px;
     width: 100%;
-    max-width: 600px;
     background: linear-gradient(90deg, #0d4f5e, #14667a, #00a8a8, #00d4d4, #00a8a8, #14667a, #0d4f5e);
     background-size: 300% 100%;
     animation: soft-cyan-glitter 1.5s ease-in-out infinite;
