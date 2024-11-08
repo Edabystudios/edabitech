@@ -5,9 +5,9 @@ let newsData = [
         imageUrl: "https://9jaflaver.com/wp-content/uploads/2024/11/FB_IMG_1730899054700_1730899326-70x70.jpg.webp"
     },
     {
-        title: "Second News Headline",
-        summary: "A brief summary for the second news article.",
-        imageUrl: "https://example.com/path-to-image2.jpg"
+        title: "FIFA President Gianni Infantino Congratulates Donald Trump Following Self-Declared Election Victory",
+        summary: "FIFA President Gianni Infantino extended his congratulations to Donald Trump after Trump declared victory in the U.S. election. The message came amid ongoing vote counting and uncertain results, sparking reactions across the political and sports communities.",
+        imageUrl: "https://9jaflaver.com/wp-content/uploads/2024/11/9…ngratulated_Donald_Trump_w-a-2_1730893482967.avif"
     },
 	  {
         title: "Headline of the First News Article",
