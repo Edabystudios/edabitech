@@ -1,8 +1,8 @@
 
   body{
-                      background-color: black;
-                      font-family: 'helvetica';
-                      color:cyan;
+                      background-color: white;
+                      font-family: 'verdana';
+                      color:black;
 	       }
 	   header {
 			position: fixed;
@@ -19,7 +19,7 @@
 		}
 		.logo-container{
 			font-size: 1.0em;
-			color:cyan;
+			color:black;
 			font-family: 'HELVETICA';
 			user-select: none; 
             text-align: left; /* Center the logo and text */
@@ -35,8 +35,8 @@
 		.navigation a {
 			position: relative;
 			font-size: 1.1em;
-			color:cyan;
-			font-family: 'helvetica';
+			color:black;
+			font-family: 'verdana';
 			text-decoration: none;
 			font-weight: 500;
 			margin-left: 20px;
@@ -54,13 +54,13 @@
   align-items: center;
   justify-content: center;
   padding: 8px;
-  background-color: cyan; /* Adjust for each platform if needed */
+  background-color: black; /* Adjust for each platform if needed */
   border-radius: 50%;
 }
 
 ion-icon {
   font-size: 20px;
-  color: cyan;
+  color: black;
 }
  .search-container {
             display: flex;
@@ -71,13 +71,13 @@ ion-icon {
         .search-box {
             padding: 10px;
             width: 300px;
-            border: 2px solid cyan;
+            border: 2px solid black;
             border-radius: 8px 0 0 8px;
             font-size: 16px;
         }
         .search-button {
             padding: 10px 20px;
-            border: 2px solid cyan;
+            border: 2px solid black;
             border-left: none;
             background-color: black;
             color: cyan;
