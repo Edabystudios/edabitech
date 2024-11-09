@@ -1,25 +1,27 @@
-
+:root {
+  --main-bg-color: #151947;
+  --main-font-color: #ffffff;
+}
   /* You dey scrape your papa website ba? */
   body {
-    background-color: #181d23;
-    font-family: Verdana, sans-serif;
-    color: #fff;
+   background: var(--main-bg-color);
+	color: var(--main-font-color);
+	font-family: 'Verdana';
+	margin: 0;
+	padding: 0;
+	min-width: 270px;
+	display: flex;
+	flex-direction: column;;
   }
 
   /* na here dem dagger ur papa */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2px;
-    background: #181d23;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-  }
-
+ 
+header{
+	display: flex;
+	justify-content: flex-start;
+	width:90%;
+	margin: 2em auto;
+}
   /* Guy u dey look cultist code */
   .logo-container {
     font-size: 1em;
@@ -37,13 +39,6 @@
   }
 
   /* We are top notch set of developers mannn */
-  .navigation a {
-    font-size: 1.1em;
-    color: #FFF;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 20px;
-  }
 
   /* Social icons */
   .social-icons {
@@ -66,40 +61,27 @@
     font-size: 20px;
     color: #FFF;
   }
+.search-box{
+	background: #181d23;
+	margin-right: 1em;
+	padding: 0.5em 1em;
+	border-radius: 50px;
+	width:70%;
+	min-width:100px;
+}
 
-  /* Search box styling */
-  .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-  }
+.search-box input{
+	border:none; 
+	background:none; 
+	outline: none;
+	padding: 0 1em;
+	color: white;
+	width:65%;
+}
 
-  .search-box {
-    padding: 10px;
-    width: 300px;
-    border: 1.2px solid #99FFFF;
-    border-radius: 15px 0 0 15px;
-    font-size: 16px;
-  }
-
-  .search-button {
-    padding: 10px 20px;
-    border-left: none;
-    background-color: #27303b;
-    color: black;
-    cursor: pointer;
-    overflow:hidden;
-    border-radius: 0 8px 8px 0;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Verdana, sans-serif;
-  }
-
-  .search-button:hover {
-    background-color: #555;
-  }
-
+.search-box a{
+	float: right;
+}
   /* Centered button styling */
   .centered-button {
     display: block;
