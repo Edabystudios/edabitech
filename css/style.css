@@ -22,23 +22,105 @@ header{
 	width:90%;
 	margin: 2em auto;
 }
-  /* Guy u dey look cultist code */
-  .logo-container {
-    font-size: 1em;
-    color: #fff;
-    user-select: none;
-    text-align: left;
-    margin-top: 5px;
-  }
+a{
+	text-decoration: none;
+	color:#ffffff;
+}
 
-  /* Powered by ur mama toto */
-  .powered-by {
-    font-size: 12px;
-    color: #f5f5f5;
-    margin-top: -20px;
-  }
+a:hover{
+	color:#6872f0;
+}
 
-  /* We are top notch set of developers mannn */
+.nav-col{
+	display: flex;
+	align-items: center;
+}
+.left-col, .right-col{
+	width: 50%;
+}
+
+#header-logo{
+	font-size: 3rem;
+	margin-right: 0.3em; 
+}
+
+.header-title{
+	font-size: 1.5rem;
+	margin-right: 5rem;
+}
+.header-title p{
+	margin:0;
+}
+
+.nav-col ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.search-box{
+	background: #12193e;
+	margin-right: 1em;
+	padding: 0.5em 1em;
+	border-radius: 50px;
+	width:70%;
+	min-width:100px;
+}
+
+.search-box input{
+	border:none; 
+	background:none; 
+	outline: none;
+	padding: 0 1em;
+	color: white;
+	width:65%;
+}
+
+.search-box a{
+	float: right;
+}
+
+#notif{
+	font-size: 1.25rem;
+	margin-right: 2em; 
+}
+
+.user-img{
+	border-radius: 50%;
+	width:3rem;
+	margin-right: 2em;
+}
+
+@media screen and (max-width: 800px){
+	.header-title, ul, #notif{
+		display:none;
+	}
+	.left-col{
+		width:25%%;
+	}
+	.right-col{
+		width:75%;
+	}
+	.search-box input{
+		width: 50%;
+	}
+}
+@media screen and (max-width:475px){
+	
+	#header-logo{
+		float: left;
+		font-size: 2rem;
+	}
+	.search-box{
+		width:90%;
+	}
+	.search-box input{
+		width:40%;
+	}
+	.user-img{
+		width:2rem;
+	}
+/* We are top notch set of developers mannn */
 
   /* Social icons */
   .social-icons {
